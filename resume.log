@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.2)  24 FEB 2026 15:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.2)  24 FEB 2026 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -329,34 +329,62 @@ Package: fontawesome5-generic-helper 2022/05/02 v5.15.4 non-uTeX helper for fon
 tawesome5
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping
-.def)))
-Package hyperref Info: Option `colorlinks' set `true' on input line 35.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 67
-.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+.def))) (/usr/local/texlive/2025/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/soul/soul-ori.sty
+Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
+\SOUL@word=\toks25
+\SOUL@lasttoken=\toks26
+\SOUL@syllable=\toks27
+\SOUL@cmds=\toks28
+\SOUL@buffer=\toks29
+\SOUL@token=\toks30
+\SOUL@syllgoal=\dimen156
+\SOUL@syllwidth=\dimen157
+\SOUL@charkern=\dimen158
+\SOUL@hyphkern=\dimen159
+\SOUL@dimen=\dimen160
+\SOUL@dimeni=\dimen161
+\SOUL@minus=\count290
+\SOUL@comma=\count291
+\SOUL@apo=\count292
+\SOUL@grave=\count293
+\SOUL@spaceskip=\skip68
+\SOUL@ttwidth=\dimen162
+\SOUL@uldp=\dimen163
+\SOUL@ulht=\dimen164
 )
-(./resume.aux)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 36.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 74
+.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (./resume.aux)
 \openout1 = `resume.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -392,20 +420,20 @@ LaTeX Font Info:    ... okay on input line 67.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 67.
-Package microtype Info: Applying patch `item' on input line 67.
-Package microtype Info: Applying patch `toc' on input line 67.
-Package microtype Info: Applying patch `eqnum' on input line 67.
-Package microtype Info: Applying patch `footnote' on input line 67.
-Package microtype Info: Applying patch `verbatim' on input line 67.
-LaTeX Info: Redefining \microtypesetup on input line 67.
+LaTeX Info: Redefining \microtypecontext on input line 74.
+Package microtype Info: Applying patch `item' on input line 74.
+Package microtype Info: Applying patch `toc' on input line 74.
+Package microtype Info: Applying patch `eqnum' on input line 74.
+Package microtype Info: Applying patch `footnote' on input line 74.
+Package microtype Info: Applying patch `verbatim' on input line 74.
+LaTeX Info: Redefining \microtypesetup on input line 74.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 67.
+LaTeX Info: Redefining \showhyphens on input line 74.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -415,67 +443,67 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count290
-\scratchdimen=\dimen156
+\scratchcounter=\count294
+\scratchdimen=\dimen165
 \scratchbox=\box55
-\nofMPsegments=\count291
-\nofMParguments=\count292
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count293
-\MPscratchDim=\dimen157
-\MPnumerator=\count294
-\makeMPintoPDFobject=\count295
-\everyMPtoPDFconversion=\toks26
+\nofMPsegments=\count295
+\nofMParguments=\count296
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count297
+\MPscratchDim=\dimen166
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
+\everyMPtoPDFconversion=\toks32
 )
-Package hyperref Info: Link coloring ON on input line 67.
+Package hyperref Info: Link coloring ON on input line 74.
  (./resume.out) (./resume.out)
 \@outlinefile=\write3
 \openout3 = `resume.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7
-4.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
+1.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7
-4.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
+1.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-74.
+81.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-74.
+81.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 74.
+(Font)              <10.95> on input line 81.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 74.
+(Font)              <8> on input line 81.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 74.
+(Font)              <6> on input line 81.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-03.
+10.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 169.
+nput line 176.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
 )
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 169.
+nput line 176.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
 ) [1
@@ -496,23 +524,25 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15248 strings out of 473190
- 263663 string characters out of 5715801
- 697404 words of memory out of 5000000
- 38256 multiletter control sequences out of 15000+600000
- 601250 words of font info for 105 fonts, out of 8000000 for 9000
+ 15500 strings out of 473190
+ 267783 string characters out of 5715801
+ 707538 words of memory out of 5000000
+ 38498 multiletter control sequences out of 15000+600000
+ 601408 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,1003b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,1003b,618s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/fontawesome5/FontAweso
 me5Free-Solid.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmb
 x10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></
-usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/t
-exlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/
-texmf-dist/fonts/type1/public/lm/lmri10.pfb>
-Output written on resume.pdf (2 pages, 152163 bytes).
+usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/local/t
+exlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025
+/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/
+fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/
+public/lm/lmri10.pfb>
+Output written on resume.pdf (2 pages, 208187 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
  24577 words of extra memory for PDF output out of 24883 (max. 10000000)
 

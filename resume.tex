@@ -20,6 +20,7 @@
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage{fontawesome5}   % \faEnvelope, \faPhone — install if missing
+\usepackage{soul}           % \ul for underlined hyperlinks
 
 % ─── Colours ───────────────────────────────────────────────
 \definecolor{sectionbg}{RGB}{183, 198, 210}   % section-header fill (steel blue-grey)
@@ -34,6 +35,12 @@
   pdftitle   = {Jay Ree – Resume},
 }
 
+% ─── Underlined hyperlinks (match original PDF style) ─────
+\setulcolor{linkblue}
+\setul{1pt}{0.4pt}% depth / thickness
+\let\hrefnoul\href
+\renewcommand{\href}[2]{\hrefnoul{#1}{\ul{#2}}}
+
 % ─── Global spacing ────────────────────────────────────────
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{4pt}
@@ -42,12 +49,12 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot[C]{%
-  \small
+  \footnotesize
   \faEnvelope~\textbf{Email:} \href{mailto:lee010518@gmail.com}{lee010518@gmail.com}
-  \quad\textbf{|}%
-  \quad\faPhone~\textbf{Mobile:} 0452134809
-  \quad\textbf{|}%
-  \quad\faPhone~\textbf{Referees:} Further information provided on request%
+  \enspace\textbf{|}\enspace
+  \faPhone~\textbf{Mobile:} 0452134809
+  \enspace\textbf{|}\enspace
+  \faHome~\textbf{Referees:} Further information provided on request%
 }
 \renewcommand{\headrulewidth}{0pt}
 
@@ -108,7 +115,7 @@ Final-year Software Engineering (Honours) student at Monash University – gradu
         emissions by reducing the number of active engines across multi-type vehicle fleets.
 
   \item Collaborated with supervisor
-        \href{https://research.monash.edu/en/persons/eunus-ali}{Dr.\ Eunus Ali} to develop
+        \href{https://research.monash.edu/en/persons/eunus-ali}{Dr.~Eunus Ali} to develop
         the project problem statement, define evaluation metrics, and prepare the groundwork
         for simulation testing and potential future research outputs.
 \end{itemize}
@@ -186,7 +193,7 @@ Final-year Software Engineering (Honours) student at Monash University – gradu
 \end{itemize}
 
 % ── Monash College ──
-\vspace{6pt}
+\vspace{4pt}
 \noindent\textbf{Monash College (Foundation Year)}\hfill\textbf{July 2019 – June 2020}
 
 \begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
