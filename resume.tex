@@ -1,0 +1,238 @@
+% ============================================================
+%  Jay Ree – Curriculum Vitae
+%  Compile:  pdflatex resume.tex   (run twice for correct refs)
+%  Requires: fontawesome5 package  (tlmgr install fontawesome5)
+%
+%  Search for "TODO:" to find fields you should personalise
+%  (LinkedIn / GitHub URLs, project links, badge link, etc.)
+% ============================================================
+\documentclass[11pt, a4paper]{article}
+
+% ─── Packages ──────────────────────────────────────────────
+\usepackage[a4paper, top=0.50in, bottom=0.90in,
+            left=0.75in, right=0.75in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}   % \faEnvelope, \faPhone — install if missing
+
+% ─── Colours ───────────────────────────────────────────────
+\definecolor{sectionbg}{RGB}{183, 198, 210}   % section-header fill (steel blue-grey)
+\definecolor{linkblue} {RGB}{ 17,  85, 204}   % hyperlink blue
+
+% ─── Hyperref ──────────────────────────────────────────────
+\hypersetup{
+  colorlinks = true,
+  urlcolor   = linkblue,
+  linkcolor  = linkblue,
+  pdfauthor  = {Jay Ree},
+  pdftitle   = {Jay Ree – Resume},
+}
+
+% ─── Global spacing ────────────────────────────────────────
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+% ─── Footer (every page) ───────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{%
+  \small
+  \faEnvelope~\textbf{Email:} \href{mailto:lee010518@gmail.com}{lee010518@gmail.com}
+  \quad\textbf{|}%
+  \quad\faPhone~\textbf{Mobile:} 0452134809
+  \quad\textbf{|}%
+  \quad\faPhone~\textbf{Referees:} Further information provided on request%
+}
+\renewcommand{\headrulewidth}{0pt}
+
+% ─── Section banner (full-width coloured bar) ──────────────
+%  Maths: colorbox total width = parbox width + 2×\fboxsep
+%  We want total width = \linewidth, so parbox = \linewidth − 2×5pt
+\newcommand{\resumesection}[1]{%
+  \vspace{8pt}\par
+  {\setlength{\fboxsep}{5pt}%
+   \noindent\colorbox{sectionbg}{%
+     \parbox{\dimexpr\linewidth-10pt\relax}{\strut\textbf{\large #1}\strut}%
+   }}%
+  \vspace{2pt}\par
+}
+
+% ═══════════════════════════════════════════════════════════
+\begin{document}
+% ═══════════════════════════════════════════════════════════
+
+% ─── HEADER ────────────────────────────────────────────────
+\noindent
+\begin{minipage}[c]{0.25\textwidth}
+  \href{mailto:lee010518@gmail.com}{lee010518@gmail.com}
+\end{minipage}%
+\begin{minipage}[c]{0.50\textwidth}
+  \centering
+  {\fontsize{26}{30}\selectfont\textbf{Jay Ree}}\\[3pt]
+  \href{https://www.linkedin.com/in/YOURPROFILE}{LinkedIn},% TODO: replace YOURPROFILE
+  \href{https://github.com/YOURUSERNAME}{GitHub}%            TODO: replace YOURUSERNAME
+\end{minipage}%
+\begin{minipage}[c]{0.25\textwidth}
+  \raggedleft
+  0452134809
+\end{minipage}
+
+\vspace{4pt}
+{\color{linkblue}\rule{\linewidth}{1.2pt}}
+\vspace{2pt}
+
+% ─── SUMMARY ───────────────────────────────────────────────
+Final-year Software Engineering (Honours) student at Monash University – graduating Nov 2026 – and a recipient of the 2023 and 2024 Monash Engineering Dean's Honours (Top 3\%). I am currently working as a Research Intern at Monash University on the project ``Integrating Multi-Type Autonomous Vehicles Across Urban Mobility'' under \href{https://research.monash.edu/en/persons/eunus-ali}{Dr Eunus Ali}. I also bring 7+ months of experience as a Full-Stack Developer Intern at the startup \href{https://jobsearch.works}{JobSearch.Works}, as well as 6 months of industry experience as an IT Analyst at \href{https://www.colesgroup.com.au}{Coles Group}, where I was nominated as the best intern in the cohort. In my free time, I practise kendo, explore the outdoors, and build self-driven software projects.
+
+% ─── EXPERIENCE ────────────────────────────────────────────
+\resumesection{Experience}
+
+% ── Research Assistant ──
+\noindent\textbf{Research Assistant –\quad Monash University, Clayton Victoria}%
+\hfill\textbf{Nov 2025 –}\\
+\href{https://YOURPROJECTLINK}{\textbf{Project}}% TODO: add your project URL
+\textbf{: Integrating Multi-Type Autonomous Vehicles for Sustainable Urban Mobility}
+
+\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+  \item Contributed to the design of algorithms that optimise how autonomous vehicles dynamically
+        merge, detach, and form efficient travel ``pools'' based on shared routes, capacity
+        constraints, and energy usage.
+
+  \item Implemented early prototypes for online decision-making models that minimise CO$_2$
+        emissions by reducing the number of active engines across multi-type vehicle fleets.
+
+  \item Collaborated with supervisor
+        \href{https://research.monash.edu/en/persons/eunus-ali}{Dr.\ Eunus Ali} to develop
+        the project problem statement, define evaluation metrics, and prepare the groundwork
+        for simulation testing and potential future research outputs.
+\end{itemize}
+
+% ── Full Stack Developer Intern ──
+\vspace{4pt}
+\noindent\textbf{Full Stack Developer Intern –}
+\href{https://jobsearch.works}{\textbf{Job Search Work}}
+\textbf{Melbourne, Victoria}\hfill\textbf{May 2025 –}
+
+\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+  \item Contributed to building the AI-powered job application SaaS platform by joining the startup
+        team. Implemented components for resume-job matching, automated job-application workflows
+        and an interactive dashboard.
+
+  \item Managed and optimised the platform's \textbf{Firebase} user database to support automated
+        job-application workflows, and enhanced dashboard usability by refining UI components
+        based on job-matching logic using \textbf{TypeScript} and \textbf{React}.
+
+  \item Improved platform reliability and deployment efficiency by configuring \textbf{GitHub
+        Actions CI/CD pipelines} and integrating
+        \href{https://typicode.github.io/husky/}{\textbf{Husky}} to automate testing, linting,
+        and continuous deployment across the development environment.
+\end{itemize}
+
+% ── IT Analyst ──
+\vspace{4pt}
+\noindent\textbf{IT Analyst – Hardware Co-Ordination Intern –}
+\href{https://www.colesgroup.com.au}{\textbf{Coles Group}}
+\textbf{Hawthorn, Victoria}\hfill\textbf{Jul 2024 – Dec 2024}
+
+\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+  \item Coordinated hardware lifecycle management across multiple Coles Divisions, ensuring smooth
+        deployments, upgrades, and resolution of hardware-software integration issues across
+        functional teams.
+
+  \item Automated manual reporting processes using
+        \href{https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office}{VBA}
+        (Microsoft Macro), reducing processing time from 4 hours to 30 minutes, streamlining
+        asset tracking and improving data accuracy across the team.
+
+  \item Optimised vendor management and asset processes, securing cost-saving agreements and
+        contributing to over \$90,000 in operational savings through lifecycle planning.
+\end{itemize}
+
+% ─── EDUCATION ─────────────────────────────────────────────
+\resumesection{Education}
+
+% ── Monash University ──
+\noindent\textbf{Monash University}%
+\hfill\textbf{July 2020 – Present [Expected Graduation: 2026]}
+
+\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+  \item Bachelor of Engineering (Honours) in Software Engineering as a 2023 \& 2024 Monash
+        Engineering Dean's Honours recipient (Top 3\% of engineering students), with GPA
+        3.769\,/\,4.000 (High Distinction).
+
+  \item Working proficiency in \textbf{Python}, \textbf{Java}, \textbf{TypeScript/JavaScript},
+        \textbf{Tailwind CSS}, \textbf{MongoDB}, \textbf{SQL}, and \textbf{PHP} for software
+        development; strong understanding of algorithms, data structures, and databases.
+        Experienced with \textbf{Linux}, \textbf{Angular}, \textbf{React}, \textbf{Meteor},
+        \textbf{Firebase}, and \textbf{Git}. Industry experiences developing Microsoft Excel
+        \textbf{Macros} for system automation and debugging hardware using measurement tools.
+
+  \item Designed a multi-user, real-time web application for \textit{Personal Meal Planning
+        Assistant}, enabling users to manage personal recipes, track inventory, reduce food
+        waste, and receive AI-powered meal recommendations. Built with \textbf{Angular}
+        (framework) and \textbf{TypeScript} (front-end/back-end).
+
+  \item Developed a fully-fledged, live,
+        \href{https://YOURCAFEPROJECTLINK}{\textit{multi-user café-management}}% TODO: add URL
+        RTE system using \textbf{TypeScript}, \textbf{Tailwind CSS}, \textbf{MongoDB}
+        (front-end/back-end) and \textbf{Meteor} (framework) for real-time operational
+        coordination.
+\end{itemize}
+
+% ── Monash College ──
+\vspace{6pt}
+\noindent\textbf{Monash College (Foundation Year)}\hfill\textbf{July 2019 – June 2020}
+
+\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+  \item Graduated with GPA of 4.0/4.0 (High Distinction)
+
+  \item Recipient: Engineering International Undergraduate Excellence Scholarship (awarded for
+        ATAR equivalent >96 and exceptional academic performance).
+\end{itemize}
+
+% ─── SELF-DRIVEN PROJECT ───────────────────────────────────
+\resumesection{Self-driven Project}
+
+\vspace{4pt}
+\noindent\textbf{Redesign Local Business Website
+(\href{https://GLORYAUTOURL}{Glory Auto})}% TODO: add Glory Auto URL
+
+\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+  \item Redesigned and deployed the business website for a
+        \href{https://GLORYAUTOURL}{local mechanic workshop} in Oakleigh, Victoria, improving
+        functionality and usability using HTML, CSS, JavaScript, and
+        \href{https://www.emailjs.com}{EmailJS} for reservation handling.
+
+  \item Reduced annual costs by up to \$10k by removing reliance on third-party VACC
+        maintenance, and increased website traffic and reservation requests by over 50\%
+        compared to the previous site.
+\end{itemize}
+
+% ─── AWARDS & HONORS ───────────────────────────────────────
+\resumesection{Awards \& Honors}
+
+\vspace{4pt}
+\noindent
+2024 Monash Engineering Deans Honours (Top 3\% of cohort) – Jun 2025\\
+2023 Monash Engineering Deans Honours (Top 3\% of cohort) – May 2024\\
+Industry-Based Learning Placement Scholarship – July 2024\\
+Academic Commendation for Highest Grade in
+\href{https://handbook.monash.edu/2024/units/FIT2081}{FIT2081}:
+Mobile Application development – May 2024\\
+Engineering International Undergraduate Excellence Scholarship – Jun 2020
+
+% ─── CERTIFICATIONS ────────────────────────────────────────
+\resumesection{Certifications}
+
+\vspace{4pt}
+\noindent\href{https://www.credly.com/badges/YOURBADGEID}{\textbf{AWS Certified Cloud Practitioner}}% TODO: add Credly badge URL
+– Mar 2025
+
+% ═══════════════════════════════════════════════════════════
+\end{document}
