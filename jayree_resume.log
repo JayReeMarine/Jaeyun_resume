@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.2)  24 FEB 2026 20:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.2)  24 FEB 2026 22:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**resume.tex
-(./resume.tex
+**jayree_resume.tex
+(./jayree_resume.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -364,8 +364,8 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 74
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./resume.aux)
-\openout1 = `resume.aux'.
+) (./jayree_resume.aux)
+\openout1 = `jayree_resume.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
 LaTeX Font Info:    ... okay on input line 74.
@@ -456,9 +456,9 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 \everyMPtoPDFconversion=\toks32
 )
 Package hyperref Info: Link coloring ON on input line 74.
- (./resume.out) (./resume.out)
+ (./jayree_resume.out) (./jayree_resume.out)
 \@outlinefile=\write3
-\openout3 = `resume.out'.
+\openout3 = `jayree_resume.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
 1.
@@ -514,22 +514,22 @@ al/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/202
 fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local/texlive/2025/texmf-dist/f
 onts/enc/dvips/fontawesome5/fa5free2.enc}]
 
-[2] (./resume.aux)
+[2] (./jayree_resume.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `resume.out' has not changed.
+Package rerunfilecheck Info: File `jayree_resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  15505 strings out of 473190
- 267840 string characters out of 5715801
- 708538 words of memory out of 5000000
+ 267973 string characters out of 5715801
+ 708580 words of memory out of 5000000
  38498 multiletter control sequences out of 15000+600000
  601679 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,1003b,616s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,1010b,616s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/fontawesome5/FontAweso
 me5Free-Solid.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmb
 x10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></
@@ -537,7 +537,7 @@ usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/local/t
 exlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025
 /texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/
 fonts/type1/public/lm/lmri10.pfb>
-Output written on resume.pdf (2 pages, 187077 bytes).
+Output written on jayree_resume.pdf (2 pages, 187077 bytes).
 PDF statistics:
  85 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream
