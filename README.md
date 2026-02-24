@@ -84,10 +84,10 @@ latexmk -C   # removes everything including resume.pdf
 1. Open  resume.tex  in VSCode
 2. Make your changes
 3. Cmd + S  →  latexmk runs automatically  →  resume.pdf is updated
-4. View PDF:  Cmd + Alt + V
+4. View PDF:  Cmd + Option + V
 ```
 
-> **Important:** Always open the PDF via `Cmd + Alt + V` while `resume.tex` is active.
+> **Important:** Always open the PDF via `Cmd + Option + V` while `resume.tex` is active.
 > Do NOT click `resume.pdf` directly in the file explorer — VSCode will show a binary error.
 
 ---
@@ -163,7 +163,7 @@ Search (`Cmd + F`) for the placeholders below in `resume.tex` and replace with r
 
 ### "Binary file" error when opening resume.pdf
 This happens when you click `resume.pdf` directly in the file explorer.
-**Fix:** Open `resume.tex` first, then press `Cmd + Alt + V`.
+**Fix:** Open `resume.tex` first, then press `Cmd + Option + V`.
 
 ### PDF not updating after save
 - Check the LaTeX Workshop status bar at the bottom of VSCode
