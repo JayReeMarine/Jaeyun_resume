@@ -23,7 +23,7 @@
 \usepackage{soul}           % \ul for underlined hyperlinks
 
 % ─── Colours ───────────────────────────────────────────────
-\definecolor{sectionbg}{RGB}{183, 198, 210}   % section-header fill (steel blue-grey)
+\definecolor{sectionbg}{RGB}{194, 178, 128}   % section-header fill (ochre / 황토색)
 \definecolor{linkblue} {RGB}{ 17,  85, 204}   % hyperlink blue
 
 % ─── Hyperref ──────────────────────────────────────────────
@@ -95,57 +95,78 @@
 \vspace{2pt}
 
 % ─── SUMMARY ───────────────────────────────────────────────
-Final-year Software Engineering (Honours) student at Monash University – graduating Nov 2026 – and a recipient of the 2023 and 2024 Monash Engineering Dean's Honours (Top 3\%). I am currently working as a Research Intern at Monash University on the project ``Integrating Multi-Type Autonomous Vehicles Across Urban Mobility'' under \href{https://research.monash.edu/en/persons/eunus-ali}{Dr Eunus Ali}. I also bring 7+ months of experience as a Full-Stack Developer Intern at the startup \href{https://www.linkedin.com/company/job-search-works/posts/?feedView=all}{JobSearch.Works}, as well as 6 months of industry experience as an IT Analyst at \href{https://www.linkedin.com/company/colesgroup/posts/?feedView=all}{Coles Group}, where I was nominated as the best intern in the cohort. In my free time, I practise kendo, explore the outdoors, and build self-driven software projects.
+Final-year Software Engineering (Honours) student at Monash University -- graduating Nov 2026 -- and a recipient of the 2023 and 2024 Monash Engineering Dean's Honours (Top 3\%). I recently co-founded \href{https://tryaiva.app/}{AIVA} as CTO, building an AI-powered executive assistant platform, and am conducting research at Monash University under \href{https://research.monash.edu/en/persons/eunus-ali}{Dr Eunus Ali}. I also bring experience as a Full-Stack Developer Intern at \href{https://www.linkedin.com/company/job-search-works/posts/?feedView=all}{JobSearch.Works} and as an IT Analyst at \href{https://www.linkedin.com/company/colesgroup/posts/?feedView=all}{Coles Group}. In my free time, I practise kendo, explore the outdoors, and build self-driven software projects.
 
 % ─── EXPERIENCE ────────────────────────────────────────────
 \resumesection{Experience}
 
-% ── Research Assistant ──
-\noindent\textbf{Research Assistant –\quad Monash University, Clayton Victoria}%
-\hfill\textbf{Nov 2025 –}\\
-\href{https://supervisorconnect.it.monash.edu/projects/research/autonomous-vehicles-urban-transit-optimisation}{\textbf{Project}}
-\textbf{: Integrating Multi-Type Autonomous Vehicles for Sustainable Urban Mobility}
+% ── CTO – AIVA ──
+\noindent\textbf{Chief Technology Officer (CTO) –}
+\href{https://tryaiva.app/}{\textbf{AIVA}}\textbf{, Melbourne}%
+\hfill\textbf{Dec 2025 –}\\
+\textbf{Project: AI-Powered Personal Executive Assistant for Productivity \& Time Management}
 
 \begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
-  \item Contributed to the design of algorithms that optimise how autonomous vehicles dynamically
-        merge, detach, and form efficient travel ``pools'' based on shared routes, capacity
-        constraints, and energy usage.
+  \item Led the end-to-end architecture and development of a full-stack AI assistant platform
+        --- building the backend in Node.js (Express) with Supabase (PostgreSQL) and the mobile
+        client in Flutter (iOS) --- integrating third-party services including Google Calendar,
+        Notion, and Google Cloud voice APIs to deliver a unified productivity tool.
 
-  \item Implemented early prototypes for online decision-making models that minimise CO$_2$
-        emissions by reducing the number of active engines across multi-type vehicle fleets.
+  \item Owned the AI feature pipeline, designing a conversational assistant using Google Gemini
+        that autonomously manages calendar scheduling, task prioritisation, and personalised
+        recommendations through long-term memory of user preferences.
 
-  \item Collaborated with supervisor
-        \href{https://research.monash.edu/en/persons/eunus-ali}{Dr.~Eunus Ali} to develop
-        the project problem statement, define evaluation metrics, and prepare the groundwork
-        for simulation testing and potential future research outputs.
+  \item Directed technical strategy and sprint planning across frontend and backend teams,
+        driving code reviews, API design decisions, and release cycles while coordinating
+        cross-functional collaboration between developers and designers.
+\end{itemize}
+
+% ── Research Assistant ──
+\vspace{4pt}
+\noindent\textbf{Research Assistant –\quad Monash University, Clayton Victoria}%
+\hfill\textbf{Nov 2025 –}\\
+\href{https://supervisorconnect.it.monash.edu/projects/research/autonomous-vehicles-urban-transit-optimisation}{\textbf{Project}}%
+\textbf{: Dynamic Platoon Formation of Multi-Type Autonomous Vehicles for Sustainable Urban Mobility}
+
+\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+  \item Co-authored an \href{https://ieee-itsc.org/2026/}{IEEE ITSC}-targeted research paper
+        with \href{https://research.monash.edu/en/persons/eunus-ali}{Dr.~Mohammed Eunus Ali},
+        introducing a novel system where smaller Passive Vehicles (PVs) are physically towed by
+        larger Active Vehicles (AVs) on shared highway segments, formulating the platoon
+        formation problem as a constrained optimisation model with multi-segment matching and
+        point-wise capacity constraints.
+
+  \item Designed and implemented two matching algorithms --- a Greedy Maximum-Weight Matching
+        baseline and an Iterative Linear Assignment (ILA) method using the Jonker--Volgenant
+        solver --- achieving 25--52\% energy-proportional distance coverage across synthetic
+        scenarios with up to 400 PVs and 80 AVs.
+
+  \item Built an end-to-end experimental framework in \textbf{Python} (NumPy, SciPy, Pandas,
+        Matplotlib) with parameter sweep experiments, automated data pipelines, and comparative
+        visualisation tools for algorithm benchmarking.
 \end{itemize}
 
 % ── Full Stack Developer Intern ──
 \vspace{4pt}
 \noindent\textbf{Full Stack Developer Intern –}
-\href{https://www.linkedin.com/company/job-search-works/posts/?feedView=all}{\textbf{Job Search Work}}
-\textbf{Melbourne, Victoria}\hfill\textbf{May 2025 –}
+\href{https://app.jobsearch.works/}{\textbf{Job Search Work}}\textbf{, Melbourne}%
+\hfill\textbf{May 2025 – Nov 2025}
 
 \begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
-  \item Contributed to building the AI-powered job application SaaS platform by joining the startup
-        team. Implemented components for resume-job matching, automated job-application workflows
-        and an interactive dashboard.
+  \item Built core features for an AI-powered job application SaaS, including resume--job matching
+        and automated application workflows using \textbf{React}, \textbf{TypeScript}, and
+        \textbf{Firebase}.
 
-  \item Managed and optimised the platform's \textbf{Firebase} user database to support automated
-        job-application workflows, and enhanced dashboard usability by refining UI components
-        based on job-matching logic using \textbf{TypeScript} and \textbf{React}.
-
-  \item Improved platform reliability and deployment efficiency by configuring \textbf{GitHub
-        Actions CI/CD pipelines} and integrating
-        \href{https://typicode.github.io/husky/}{\textbf{Husky}} to automate testing, linting,
-        and continuous deployment across the development environment.
+  \item Improved deployment reliability by setting up CI/CD with \textbf{GitHub Actions} and
+        \href{https://typicode.github.io/husky/}{\textbf{Husky}}.
 \end{itemize}
 
 % ── IT Analyst ──
 \vspace{4pt}
 \noindent\textbf{IT Analyst – Hardware Co-Ordination Intern –}
-\href{https://www.linkedin.com/company/colesgroup/posts/?feedView=all}{\textbf{Coles Group}}
-\textbf{Hawthorn, Victoria}\hfill\textbf{Jul 2024 – Dec 2024}
+\href{https://www.linkedin.com/company/colesgroup/posts/?feedView=all}{\textbf{Coles Group}}%
+\hfill\textbf{Jul 2024 – Dec 2024}\\
+\textbf{Hawthorn, Victoria}
 
 \begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
   \item Coordinated hardware lifecycle management across multiple Coles Divisions, ensuring smooth
@@ -208,7 +229,7 @@ Final-year Software Engineering (Honours) student at Monash University – gradu
 
 \vspace{4pt}
 \noindent\textbf{Redesign Local Business Website
-(\href{https://github.com/JayReeMarine/Mechanic-Workshop-Page}{Glory Auto})}
+(\href{https://www.gloryauto.com.au/}{Glory Auto})}
 
 \begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
   \item Redesigned and deployed the business website for a
