@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.2)  24 FEB 2026 23:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.2)  2 MAR 2026 12:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -491,19 +491,19 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 81.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-11.
+10.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 177.
+nput line 186.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
 )
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 177.
+nput line 186.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
 ) [1
@@ -523,13 +523,13 @@ Package rerunfilecheck Info: File `jayree_resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15505 strings out of 473190
- 267973 string characters out of 5715801
- 709580 words of memory out of 5000000
+ 15497 strings out of 473190
+ 267885 string characters out of 5715801
+ 711580 words of memory out of 5000000
  38498 multiletter control sequences out of 15000+600000
- 601679 words of font info for 107 fonts, out of 8000000 for 9000
+ 601278 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,1010b,616s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,1010b,490s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/fontawesome5/FontAweso
 me5Free-Solid.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmb
 x10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></
@@ -537,7 +537,7 @@ usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/local/t
 exlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025
 /texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/
 fonts/type1/public/lm/lmri10.pfb>
-Output written on jayree_resume.pdf (2 pages, 187161 bytes).
+Output written on jayree_resume.pdf (2 pages, 187688 bytes).
 PDF statistics:
  86 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream

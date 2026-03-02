@@ -54,7 +54,7 @@ To compile the resume to PDF:
 
 ```bash
 cd Jaeyun_resume
-latexmk -pdf resume.tex
+latexmk -pdf jayree_resume.tex
 ```
 
 The compiled PDF will be generated as `resume.pdf`.
