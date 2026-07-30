@@ -3,20 +3,17 @@
 %  Compile:  pdflatex jayree_research_cv.tex   (run twice for refs)
 %  Requires: fontawesome5 package  (tlmgr install fontawesome5)
 %
-%  This is the RESEARCH-oriented version of the CV. It foregrounds
-%  research output (publications, Honours thesis) and research
-%  experience, ahead of professional/software experience.
+%  Research-oriented CV: foregrounds research output and research
+%  experience ahead of professional/software experience.
+%  Kept to 2 pages. No em-dashes; plain hyphens in date ranges.
 %
-%  TODO before submitting (see chat notes):
-%   - Confirm the EXACT SIGSPATIAL 2026 short-paper title and the
-%     author list/order from the actual submission (the title below
-%     reuses the earlier working title and MUST be verified).
-%   - Confirm the Honours thesis title wording.
+%  TODO before submitting:
+%   - Confirm the Honours-thesis title wording.
 % ============================================================
 \documentclass[11pt, a4paper]{article}
 
 % ─── Packages ──────────────────────────────────────────────
-\usepackage[a4paper, top=0.50in, bottom=0.90in,
+\usepackage[a4paper, top=0.50in, bottom=0.85in,
             left=0.75in, right=0.75in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -30,7 +27,7 @@
 \usepackage{soul}           % \ul for underlined hyperlinks
 
 % ─── Colours ───────────────────────────────────────────────
-\definecolor{sectionbg}{RGB}{194, 178, 128}   % section-header fill (ochre / 황토색)
+\definecolor{sectionbg}{RGB}{194, 178, 128}   % section-header fill (ochre)
 \definecolor{linkblue} {RGB}{ 17,  85, 204}   % hyperlink blue
 
 % ─── Hyperref ──────────────────────────────────────────────
@@ -44,13 +41,13 @@
 
 % ─── Underlined hyperlinks (match original PDF style) ─────
 \setulcolor{linkblue}
-\setul{1pt}{0.4pt}% depth / thickness
+\setul{1pt}{0.4pt}
 \let\hrefnoul\href
 \renewcommand{\href}[2]{\hrefnoul{#1}{\ul{#2}}}
 
 % ─── Global spacing ────────────────────────────────────────
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{4pt}
+\setlength{\parskip}{3pt}
 
 % ─── Footer (every page) ───────────────────────────────────
 \pagestyle{fancy}
@@ -67,7 +64,7 @@
 
 % ─── Section banner (full-width coloured bar) ──────────────
 \newcommand{\resumesection}[1]{%
-  \vspace{8pt}\par
+  \vspace{6pt}\par
   {\setlength{\fboxsep}{5pt}%
    \noindent\colorbox{sectionbg}{%
      \parbox{\dimexpr\linewidth-10pt\relax}{\strut\textbf{\large #1}\strut}%
@@ -101,23 +98,23 @@
 \vspace{2pt}
 
 % ─── SUMMARY (research-oriented) ───────────────────────────
-Final-year Software Engineering (Honours) student at Monash University, graduating Nov 2026, with research interests in quantum and classical algorithms for combinatorial optimisation. As a Research Assistant under \href{https://research.monash.edu/en/persons/eunus-ali}{Dr Mohammed Eunus Ali}, I designed and benchmarked matching and assignment algorithms for autonomous-vehicle coordination, resulting in a short paper currently under review at ACM SIGSPATIAL 2026. I also completed a Human Research Ethics-approved Honours thesis on human-centred adaptive assessment. Alongside my research, I bring software engineering experience as co-founder and CTO of \href{https://github.com/AIVA-MVP}{AIVA} and through industry internships. I am a recipient of the 2023 and 2024 Monash Engineering Dean's Honours.
+Final-year Software Engineering (Honours) student at Monash University, graduating Nov 2026, with research interests in quantum and classical algorithms for combinatorial optimisation. As a Research Assistant under \href{https://research.monash.edu/en/persons/eunus-ali}{Dr Mohammed Eunus Ali}, I designed and benchmarked matching and assignment algorithms for autonomous-vehicle coordination, resulting in a short paper currently under review at ACM SIGSPATIAL 2026. I also completed a Human Research Ethics-approved Honours thesis on human-centred adaptive assessment, and bring software engineering experience as co-founder and CTO of \href{https://github.com/AIVA-MVP}{AIVA}. I am a recipient of the 2023 and 2024 Monash Engineering Dean's Honours.
 
 % ─── PUBLICATIONS & RESEARCH OUTPUT ────────────────────────
 \resumesection{Publications \& Research Output}
 
-\vspace{4pt}
+\vspace{3pt}
 \noindent\textbf{Under review}
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
   \item J.~Ree, M.~E.~Ali, and M.~A.~Cheema, ``Dynamic Platoon Formation: Spatio-Temporal
         Matching for Towing-Based Cooperative Autonomous Mobility'' (short paper), submitted to
         the 34th ACM SIGSPATIAL International Conference on Advances in Geographic Information
         Systems (SIGSPATIAL 2026). \textit{Under review.}
 \end{itemize}
 
-\vspace{2pt}
+\vspace{1pt}
 \noindent\textbf{In preparation}
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
   \item Manuscript in preparation extending my Honours thesis on human-centred adaptive
         assessment (comparing LLM-based and rule-based adaptive questionnaires), targeting
         submission in 2026.
@@ -127,99 +124,91 @@ Final-year Software Engineering (Honours) student at Monash University, graduati
 \resumesection{Research Experience}
 
 % ── Research Assistant ──
-\noindent\textbf{Research Assistant --\quad Monash University, Clayton Victoria}%
-\hfill\textbf{Nov 2025 –}\\
+\noindent\textbf{Research Assistant,\quad Monash University, Clayton Victoria}%
+\hfill\textbf{Nov 2025 -}\\
 \textbf{Project: Dynamic Platoon Formation of Multi-Type Autonomous Vehicles for Sustainable Urban Mobility}
 
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
   \item Contributed to modelling the coordination task as a constrained optimisation problem
-        with multi-segment matching and capacity constraints, under
-        \href{https://research.monash.edu/en/persons/eunus-ali}{Dr.~Mohammed Eunus Ali}
+        with multi-segment matching and point-wise capacity constraints, under
+        \href{https://research.monash.edu/en/persons/eunus-ali}{Dr Mohammed Eunus Ali}
         (with Prof.~Aamir Cheema as co-author).
 
-  \item Designed and implemented two matching algorithms --- a Greedy Maximum-Weight Matching
-        baseline and an Iterative Linear Assignment (ILA) method using the Jonker--Volgenant
-        solver --- achieving 25--52\% energy-proportional distance coverage across synthetic
-        scenarios with up to 400 passive and 80 active vehicles.
+  \item Designed and implemented two matching algorithms, a Greedy Maximum-Weight Matching
+        baseline and an Iterative Linear Assignment method using the Jonker-Volgenant solver,
+        achieving 25-52\% energy-proportional distance coverage across synthetic scenarios with
+        up to 400 passive and 80 active vehicles.
 
-  \item Built an end-to-end experimental framework in \textbf{Python} (NumPy, SciPy, Pandas,
-        Matplotlib) with parameter-sweep experiments, automated data pipelines, and comparative
-        visualisation for algorithm benchmarking; revised and resubmitted the work across two
-        conference formats in response to peer review.
+  \item Built an end-to-end experimental framework in \textbf{Python} (NumPy, SciPy, Pandas)
+        with parameter-sweep experiments and comparative benchmarking; revised and resubmitted
+        the work across two conference formats in response to peer review.
 \end{itemize}
 
 % ── Honours Thesis / FYP ──
-\vspace{4pt}
-\noindent\textbf{Final Year Project Researcher (Honours Thesis) --\quad Monash University}%
-\hfill\textbf{Jul 2025 – Present}\\
+\vspace{3pt}
+\noindent\textbf{Final Year Project Researcher (Honours Thesis),\quad Monash University}%
+\hfill\textbf{Jul 2025 -}\\
 \textbf{Human-Centred Adaptive Assessment (FIT4701 / FIT4702)}
 
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
   \item Conducted a human-centred study comparing rule-based and LLM-based adaptive mental-health
         questionnaires, supervised by Dr~ABM Russel with co-supervision from Prof.~John Grundy
         (ARC Laureate Fellow) and industry mentorship from Mark Foley (Future Wellness Group).
 
-  \item Designed and ran a MUHREC-approved within-subjects user study (Project ID 51664) with
-        40 participants, grounded in the COSMIN content-validity framework, and co-developed
+  \item Designed and ran a MUHREC-approved within-subjects study (Project ID 51664) with 40
+        participants, grounded in the COSMIN content-validity framework, and co-developed
         ``Navigator'', a Flutter/Supabase prototype implementing both adaptation methods.
 
-  \item Performed quantitative analysis (paired-sample t-tests, effect sizes) and inductive
-        thematic coding, and authored the final research report; the LLM-based method was rated
-        significantly higher across all three evaluated dimensions (Clarity, Relevance, Quality).
-
-  \item Continuing to extend the study beyond the completed coursework, with a manuscript in
-        preparation targeting submission in 2026.
+  \item Led the statistical analysis (paired-sample t-tests, effect sizes) and authored the final
+        report; the LLM-based method scored significantly higher on all three dimensions
+        (Clarity, Relevance, Quality). Continuing the work toward a manuscript for submission in 2026.
 \end{itemize}
 
 % ─── PROFESSIONAL EXPERIENCE ───────────────────────────────
 \resumesection{Professional Experience}
 
 % ── Teaching Associate ──
-\noindent\textbf{Teaching Associate --}
-\textbf{Monash University, Melbourne Victoria}%
-\hfill\textbf{Mar 2026 – Jun 2026}
+\noindent\textbf{Teaching Associate,} \textbf{Monash University, Melbourne Victoria}%
+\hfill\textbf{Mar 2026 - Jun 2026}
 
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
   \item Delivered weekly applied sessions for
         \href{https://handbook.monash.edu/2025/units/fit1045}{\textit{FIT1045: Introduction to Programming}},
-        mentoring students on C++ fundamentals, control structures, data types, and the
-        SplashKit library; assessed portfolio submissions against structured rubrics.
+        mentoring students on C++ fundamentals and the SplashKit library, and assessing portfolio
+        submissions against structured rubrics.
 \end{itemize}
 
 % ── CTO – AIVA ──
-\vspace{4pt}
-\noindent\textbf{Chief Technology Officer (CTO) --}
+\vspace{3pt}
+\noindent\textbf{Chief Technology Officer (CTO),}
 \href{https://github.com/AIVA-MVP}{\textbf{AIVA}}\textbf{, Melbourne}%
-\hfill\textbf{Dec 2025 –}
+\hfill\textbf{Dec 2025 -}
 
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
-  \item Co-founded and led end-to-end architecture of a full-stack AI executive-assistant platform:
-        backend in Node.js (Express) with Supabase (PostgreSQL), mobile client in Flutter (iOS),
-        and an autonomous AI agent (Google Gemini) for scheduling and task prioritisation.
-
-  \item Directed technical strategy, sprint planning, and code review across frontend and backend
-        teams, integrating Google Calendar, Notion, and Google Cloud voice APIs.
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
+  \item Co-founded and led the end-to-end architecture of a full-stack AI executive-assistant
+        platform (Node.js/Express and Supabase/PostgreSQL backend, Flutter iOS client, and an
+        autonomous Google Gemini agent), directing technical strategy and code review across the team.
 \end{itemize}
 
 % ── Full Stack Developer Intern ──
-\vspace{4pt}
-\noindent\textbf{Full Stack Developer Intern --}
+\vspace{3pt}
+\noindent\textbf{Full Stack Developer Intern,}
 \href{https://app.jobsearch.works/}{\textbf{Job Search Works}}\textbf{, Melbourne}%
-\hfill\textbf{May 2025 – Nov 2025}
+\hfill\textbf{May 2025 - Nov 2025}
 
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
-  \item Built core features for an AI-powered job-application SaaS (resume--job matching, automated
-        application workflows) using \textbf{React}, \textbf{TypeScript}, and \textbf{Firebase};
-        set up CI/CD with \textbf{GitHub Actions} and Husky.
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
+  \item Built core features for an AI-powered job-application SaaS (resume-job matching, automated
+        workflows) using \textbf{React}, \textbf{TypeScript}, and \textbf{Firebase}; set up CI/CD
+        with \textbf{GitHub Actions} and Husky.
 \end{itemize}
 
 % ── IT Analyst ──
-\vspace{4pt}
-\noindent\textbf{IT Analyst -- Hardware Co-Ordination Intern --}
+\vspace{3pt}
+\noindent\textbf{IT Analyst, Hardware Co-Ordination Intern,}
 \href{https://www.linkedin.com/company/colesgroup/posts/?feedView=all}{\textbf{Coles Group}}%
-\hfill\textbf{Jul 2024 – Dec 2024}
+\hfill\textbf{Jul 2024 - Dec 2024}
 
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
   \item Coordinated hardware lifecycle management across Coles divisions; automated a manual
         reporting process with VBA (4 hours to 30 minutes) and contributed to over \$90,000 in
         documented operational savings through improved vendor and lifecycle planning.
@@ -229,42 +218,41 @@ Final-year Software Engineering (Honours) student at Monash University, graduati
 \resumesection{Education}
 
 \noindent\textbf{Monash University}%
-\hfill\textbf{July 2020 – Present [Expected Graduation: Nov 2026]}
+\hfill\textbf{July 2020 - Present [Expected Graduation: Nov 2026]}
 
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
   \item Bachelor of Engineering (Honours) in Software Engineering; GPA 3.759\,/\,4.000,
         WAM 82.571 (High Distinction).
 
-  \item Relevant coursework: Algorithms and Data Structures, Discrete Mathematics for Computer
-        Science, Databases, Operating Systems, Computer Architecture. Proficient in
-        \textbf{Python} (NumPy, SciPy, Pandas), \textbf{Java}, and \textbf{TypeScript/JavaScript};
-        experienced with Git, Linux, React, and SQL.
+  \item Relevant coursework in algorithms and data structures, discrete mathematics, databases,
+        and operating systems. Proficient in \textbf{Python} (NumPy, SciPy, Pandas), \textbf{Java},
+        and \textbf{TypeScript/JavaScript}; experienced with Git, Linux, and SQL.
 \end{itemize}
 
-\vspace{4pt}
-\noindent\textbf{Monash College (Foundation Year)}\hfill\textbf{July 2019 – June 2020}\\
+\vspace{3pt}
+\noindent\textbf{Monash College (Foundation Year)}\hfill\textbf{July 2019 - June 2020}\\
 GPA 4.0/4.0 (High Distinction)
 
 % ─── AWARDS & HONORS ───────────────────────────────────────
 \resumesection{Awards \& Honours}
 
-\vspace{4pt}
+\vspace{3pt}
 \noindent
-2024 Monash Engineering Dean's Honours – Jun 2025\\
-2023 Monash Engineering Dean's Honours – May 2024\\
-Summer Vacation Research Scholarship, Faculty of IT – 2025\\
-Industry-Based Learning Placement Scholarship – Jul 2024\\
+2024 Monash Engineering Dean's Honours (Jun 2025)\\
+2023 Monash Engineering Dean's Honours (May 2024)\\
+Summer Vacation Research Scholarship, Faculty of IT (2025)\\
+Industry-Based Learning Placement Scholarship (Jul 2024)\\
 Academic Commendation for Highest Grade in
 \href{https://handbook.monash.edu/2024/units/FIT2081}{FIT2081}:
-Mobile Application Development – May 2024\\
-Engineering International Undergraduate Excellence Scholarship – Jun 2020
+Mobile Application Development (May 2024)\\
+Engineering International Undergraduate Excellence Scholarship (Jun 2020)
 
 % ─── CERTIFICATIONS ────────────────────────────────────────
 \resumesection{Certifications}
 
-\vspace{4pt}
+\vspace{3pt}
 \noindent\href{https://aws.amazon.com/certification/certified-cloud-practitioner/}{\textbf{AWS Certified Cloud Practitioner}}
-– Mar 2025
+(Mar 2025)
 
 % ═══════════════════════════════════════════════════════════
 \end{document}
