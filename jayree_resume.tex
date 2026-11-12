@@ -43,7 +43,7 @@
 
 % ─── Global spacing ────────────────────────────────────────
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{4pt}
+\setlength{\parskip}{3pt}
 
 % ─── Footer (every page) ───────────────────────────────────
 \pagestyle{fancy}
@@ -52,9 +52,7 @@
   \footnotesize
   \faEnvelope~\textbf{Email:} \href{mailto:lee010518@gmail.com}{lee010518@gmail.com}
   \enspace\textbf{|}\enspace
-  \faPhone~\textbf{Mobile:} 0452134809
-  \enspace\textbf{|}\enspace
-  \faHome~\textbf{Referees:} Further information provided on request%
+  \faPhone~\textbf{Mobile:} 0452134809%
 }
 \renewcommand{\headrulewidth}{0pt}
 
@@ -62,7 +60,7 @@
 %  Maths: colorbox total width = parbox width + 2×\fboxsep
 %  We want total width = \linewidth, so parbox = \linewidth − 2×5pt
 \newcommand{\resumesection}[1]{%
-  \vspace{8pt}\par
+  \vspace{6pt}\par
   {\setlength{\fboxsep}{5pt}%
    \noindent\colorbox{sectionbg}{%
      \parbox{\dimexpr\linewidth-10pt\relax}{\strut\textbf{\large #1}\strut}%
@@ -96,23 +94,26 @@
 \vspace{2pt}
 
 % ─── SUMMARY ───────────────────────────────────────────────
-Melbourne-based final-year Software Engineering (Honours) student at Monash University -- graduating Nov 2026 -- and a recipient of the 2023 and 2024 Monash Engineering Dean's Honours (Top 3\%). I recently co-founded \href{https://github.com/AIVA-MVP}{AIVA} as CTO, building an AI-powered executive assistant platform, and am conducting research at Monash University under \href{https://research.monash.edu/en/persons/eunus-ali}{Dr Eunus Ali}. I also bring experience as a Teaching Associate at Monash University, a Full-Stack Developer Intern at \href{https://www.linkedin.com/company/job-search-works/posts/?feedView=all}{JobSearch.Works}, and an IT Analyst at \href{https://www.linkedin.com/company/colesgroup/posts/?feedView=all}{Coles Group}.
+Melbourne-based final-year Software Engineering (Honours) student at Monash University, with completion expected in Nov 2026, and a recipient of the 2023 and 2024 Monash Engineering Dean's Honours (Top 3\%). I taught \href{https://handbook.monash.edu/2025/units/fit1045}{FIT1045} as a Teaching Associate at Monash University in Semester 1, 2026, and am currently a Research Assistant under \href{https://research.monash.edu/en/persons/eunus-ali}{Dr Mohammed Eunus Ali}. I also completed a Human Research Ethics-approved Honours thesis built around a 40-participant user study, and bring industry experience as co-founder and CTO of \href{https://github.com/AIVA-MVP}{AIVA}, a Full-Stack Developer Intern at \href{https://www.linkedin.com/company/job-search-works/posts/?feedView=all}{JobSearch.Works}, and an IT Analyst at \href{https://www.linkedin.com/company/colesgroup/posts/?feedView=all}{Coles Group}.
 
 % ─── EXPERIENCE ────────────────────────────────────────────
 \resumesection{Experience}
 
 % ── Teaching Associate ──
-\noindent\textbf{Teaching Associate–}
+\noindent\textbf{Teaching Associate –}
 \textbf{Monash University, Melbourne Victoria}%
-\hfill\textbf{Mar 2026 –}
+\hfill\textbf{Mar 2026 – Jul 2026}
 
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
   \item Delivered weekly applied sessions for \href{https://handbook.monash.edu/2025/units/fit1045}{\textit{FIT1045: Introduction to Programming}},
         mentoring students on C++ programming fundamentals, control structures, data types,
         and the SplashKit library.
 
   \item Assessed portfolio submissions, providing feedback on code correctness, readability,
         and adherence to programming practices.
+
+  \item Received a \textbf{SETU teaching score of 100 (Very High)} in S1 2026, against a faculty
+        average of 86.
 \end{itemize}
 
 % ── Research Assistant ──
@@ -122,38 +123,49 @@ Melbourne-based final-year Software Engineering (Honours) student at Monash Univ
 \href{https://supervisorconnect.it.monash.edu/projects/research/autonomous-vehicles-urban-transit-optimisation}{\textbf{Project}}%
 \textbf{: Dynamic Platoon Formation of Multi-Type Autonomous Vehicles for Sustainable Urban Mobility}
 
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
-  \item Co-authored an \href{https://ieee-itsc.org/2026/}{IEEE ITSC}-targeted research paper
-        with \href{https://research.monash.edu/en/persons/eunus-ali}{Dr.~Mohammed Eunus Ali},
-        proposing a novel platoon formation system for autonomous vehicles, formulated as a
-        constrained optimisation model with multi-segment matching and capacity constraints.
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
+  \item Contributed to modelling the coordination task as a constrained optimisation problem
+        with multi-segment matching and point-wise capacity constraints, under
+        \href{https://research.monash.edu/en/persons/eunus-ali}{Dr~Mohammed Eunus Ali}
+        (with Prof.~Aamir Cheema as co-author).
 
-  \item Designed and implemented two matching algorithms --- a Greedy Maximum-Weight Matching
-        baseline and an Iterative Linear Assignment (ILA) method using the Jonker--Volgenant
-        solver --- achieving 25--52\% energy-proportional distance coverage across synthetic
-        scenarios with up to 400 PVs and 80 AVs.
+  \item Designed and implemented two matching algorithms, a Greedy Maximum-Weight Matching
+        baseline and an Iterative Linear Assignment method using the Jonker--Volgenant solver,
+        and evaluated them on synthetic scenarios with up to 400 passive and 80 active vehicles.
 
   \item Built an end-to-end experimental framework in \textbf{Python} (NumPy, SciPy, Pandas,
-        Matplotlib) with parameter sweep experiments, automated data pipelines, and comparative
-        visualisation tools for algorithm benchmarking.
+        Matplotlib) with parameter-sweep experiments and comparative benchmarking; refined
+        experiments and communicated results in response to research feedback.
+\end{itemize}
+
+% ── Honours Thesis ──
+\vspace{4pt}
+\noindent\textbf{Honours Thesis Researcher –\quad Monash University}%
+\hfill\textbf{Jul 2025 – Sep 2026}\\
+\textbf{Honours project: Adaptive Assessments (FIT4701 / FIT4702)}
+
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
+  \item Designed and ran a MUHREC-approved within-subjects user study with 40 participants,
+        comparing rule-based and LLM-based adaptive mental-health questionnaires, supervised by
+        Mr~ABM Russel with co-supervision from Prof.~John Grundy.
+
+  \item Co-developed ``Navigator'', a \textbf{Flutter}/\textbf{Supabase} prototype implementing
+        both adaptation methods, and led the statistical analysis (paired-sample t-tests, effect
+        sizes); the LLM-based method scored significantly higher on Clarity, Relevance, and Quality.
 \end{itemize}
 
 % ── CTO – AIVA ──
 \vspace{4pt}
 \noindent\textbf{Chief Technology Officer (CTO) –}
 \href{https://github.com/AIVA-MVP}{\textbf{AIVA}}\textbf{, Melbourne}%
-\hfill\textbf{Dec 2025 –}\\
+\hfill\textbf{Dec 2025 – May 2026}\\
 \textbf{Project: AI-Powered Personal Executive Assistant for Productivity \& Time Management}
 
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
-  \item Led the end-to-end architecture and development of a full-stack AI assistant platform
-        --- building the backend in Node.js (Express) with Supabase (PostgreSQL) and the mobile
-        client in Flutter (iOS) --- integrating third-party services including Google Calendar,
-        Notion, and Google Cloud voice APIs to deliver a unified productivity tool.
-
-  \item Owned the AI feature pipeline, designing an autonomous AI agent using Google Gemini
-        that manages calendar scheduling, task prioritisation, and personalised
-        recommendations through long-term memory of user preferences.
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
+  \item Led the end-to-end architecture of a full-stack AI assistant platform (Node.js/Express
+        and Supabase/PostgreSQL backend, Flutter iOS client), integrating Google Calendar, Notion,
+        and Google Cloud voice APIs, with an autonomous Google Gemini agent for scheduling,
+        task prioritisation, and personalised recommendations.
 
   \item Directed technical strategy and sprint planning across frontend and backend teams,
         driving code reviews, API design decisions, and release cycles while coordinating
@@ -163,10 +175,10 @@ Melbourne-based final-year Software Engineering (Honours) student at Monash Univ
 % ── Full Stack Developer Intern ──
 \vspace{4pt}
 \noindent\textbf{Full Stack Developer Intern –}
-\href{https://app.jobsearch.works/}{\textbf{Job Search Work}}\textbf{, Melbourne}%
+\href{https://app.jobsearch.works/}{\textbf{Job Search Works}}\textbf{, Melbourne}%
 \hfill\textbf{May 2025 – Nov 2025}
 
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
   \item Built core features for an AI-powered job application SaaS, including resume--job matching
         and automated application workflows using \textbf{React}, \textbf{TypeScript}, and
         \textbf{Firebase}.
@@ -179,10 +191,9 @@ Melbourne-based final-year Software Engineering (Honours) student at Monash Univ
 \vspace{4pt}
 \noindent\textbf{IT Analyst – Hardware Co-Ordination Intern –}
 \href{https://www.linkedin.com/company/colesgroup/posts/?feedView=all}{\textbf{Coles Group}}%
-\hfill\textbf{Jul 2024 – Dec 2024}\\
-\textbf{Hawthorn, Victoria}
+\hfill\textbf{Jul 2024 – Dec 2024}
 
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
   \item Coordinated hardware lifecycle management across multiple Coles Divisions, ensuring smooth
         deployments, upgrades, and resolution of hardware-software integration issues across
         functional teams.
@@ -201,25 +212,22 @@ Melbourne-based final-year Software Engineering (Honours) student at Monash Univ
 
 % ── Monash University ──
 \noindent\textbf{Monash University}%
-\hfill\textbf{July 2020 – Present [Expected Graduation: 2026]}
+\hfill\textbf{July 2020 – Present [Expected Graduation: Nov 2026]}
 
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
-  \item Bachelor of Engineering (Honours) in Software Engineering, with GPA
-        3.769\,/\,4.000 (High Distinction).
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
+  \item Bachelor of Engineering (Honours) in Software Engineering; GPA 3.759\,/\,4.000,
+        current WAM 82.571. Final Honours classification pending.
 
   \item Working proficiency in \textbf{Python}, \textbf{Java}, \textbf{TypeScript/JavaScript},
         \textbf{Tailwind CSS}, \textbf{MongoDB}, \textbf{SQL}, and \textbf{PHP} for software
         development; strong understanding of algorithms, data structures, and databases.
         Experienced with \textbf{Linux}, \textbf{Angular}, \textbf{React}, \textbf{Meteor},
-        \textbf{Firebase}, and \textbf{Git}. Industry experiences developing Microsoft Excel
-        \textbf{Macros} for system automation and debugging hardware using measurement tools.
-
+        \textbf{Firebase}, and \textbf{Git}.
 \end{itemize}
 
 % ── Monash College ──
 \vspace{4pt}
-\noindent\textbf{Monash College (Foundation Year)}\hfill\textbf{July 2019 – June 2020}\\
-GPA 4.0/4.0 (High Distinction)
+\noindent\textbf{Monash College (Foundation Year)}, GPA 4.0/4.0 (High Distinction)\hfill\textbf{July 2019 – June 2020}
 
 % ─── SELF-DRIVEN PROJECT ───────────────────────────────────
 \resumesection{Self-driven Project}
@@ -228,15 +236,12 @@ GPA 4.0/4.0 (High Distinction)
 \noindent\textbf{Redesign Local Business Website
 (\href{https://www.gloryauto.com.au/}{Glory Auto})}
 
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt, topsep=2pt, parsep=0pt]
-  \item Redesigned and deployed the business website for a
-        \href{https://github.com/JayReeMarine/Mechanic-Workshop-Page}{local mechanic workshop} in Oakleigh, Victoria, improving
-        functionality and usability using HTML, CSS, JavaScript, and
-        \href{https://www.emailjs.com}{EmailJS} for reservation handling.
-
-  \item Reduced annual costs by up to \$10k by removing reliance on third-party VACC
-        maintenance, and increased website traffic and reservation requests by over 50\%
-        compared to the previous site.
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt, topsep=1pt, parsep=0pt]
+  \item Redesigned and deployed the website for a
+        \href{https://github.com/JayReeMarine/Mechanic-Workshop-Page}{local mechanic workshop} in
+        Oakleigh using HTML, CSS, JavaScript, and \href{https://www.emailjs.com}{EmailJS}, reducing
+        annual costs by up to \$10k (no third-party VACC maintenance) and increasing traffic and
+        reservation requests by over 50\%.
 \end{itemize}
 
 % ─── AWARDS & HONORS ───────────────────────────────────────
@@ -246,6 +251,7 @@ GPA 4.0/4.0 (High Distinction)
 \noindent
 2024 Monash Engineering Deans Honours (Top 3\% of cohort) – Jun 2025\\
 2023 Monash Engineering Deans Honours (Top 3\% of cohort) – May 2024\\
+Summer Vacation Research Scholarship, Faculty of IT – 2025\\
 Industry-Based Learning Placement Scholarship – July 2024\\
 Academic Commendation for Highest Grade in
 \href{https://handbook.monash.edu/2024/units/FIT2081}{FIT2081}:
@@ -258,6 +264,25 @@ Engineering International Undergraduate Excellence Scholarship – Jun 2020
 \vspace{4pt}
 \noindent\href{https://aws.amazon.com/certification/certified-cloud-practitioner/}{\textbf{AWS Certified Cloud Practitioner}}
 – Mar 2025
+
+% ─── REFEREES ──────────────────────────────────────────────
+\resumesection{Referees}
+
+\vspace{2pt}
+\noindent
+\begin{minipage}[t]{0.49\linewidth}
+  \textbf{Dr Mohammed Eunus Ali}, Senior Lecturer\\
+  Faculty of IT, Monash University\\
+  \href{mailto:eunus.ali@monash.edu}{eunus.ali@monash.edu} \enspace|\enspace +61 3 9905 1741\\
+  Research Assistant supervisor
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.49\linewidth}
+  \textbf{Mr ABM Russel}, Assistant Lecturer\\
+  Faculty of IT, Monash University\\
+  \href{mailto:abm.russel@monash.edu}{abm.russel@monash.edu}\\
+  Honours project supervisor
+\end{minipage}
 
 % ═══════════════════════════════════════════════════════════
 \end{document}
